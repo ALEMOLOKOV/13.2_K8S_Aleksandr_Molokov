@@ -62,7 +62,8 @@
 
 #### ![Deployment](https://github.com/ALEMOLOKOV/13.2_K8S_Aleksandr_Molokov/blob/fce103771926eb45abe37534f4c16986c6762d03/deployment.yaml)
 
-#### ![PVC-NFS]()
+#### ![PVC-NFS](https://github.com/ALEMOLOKOV/13.2_K8S_Aleksandr_Molokov/blob/5b06e125f5be029945005ed99f48e71f8405c736/pvc-nfs.yaml)
+
 #### Статусы Deployment/sc/pv/pvc/Pods
 
 ![deploy-pvc-pv-sc](https://github.com/ALEMOLOKOV/13.2_K8S_Aleksandr_Molokov/assets/109212419/61756228-6d47-498d-86ce-e4569b84e7b4)
