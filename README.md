@@ -14,7 +14,30 @@
 5. Предоставить манифесты, а также скриншоты или вывод необходимых команд.
 
 ### Ответ
-------
+
+#### ![Deployment]()
+
+#### ![PV]()
+
+#### ![PVC]()
+
+#### Multitool может видеть и читать файлы, которые пишет Busybox
+
+![multitool видит что пишет busybox](https://github.com/ALEMOLOKOV/13.2_K8S_Aleksandr_Molokov/assets/109212419/a03fcef7-08a0-46af-be6e-3df8161acf00)
+
+#### Удаление Deployment и PVC
+
+![pv после удаления dep pvc](https://github.com/ALEMOLOKOV/13.2_K8S_Aleksandr_Molokov/assets/109212419/58429afe-b95c-4d32-a59a-70cc211ba433)
+
+#### Статус PV изменился с Bound на Released, т.к. к нему не привязана PVC
+
+#### Состояние PV после удаления
+
+![состояние после удаления pv](https://github.com/ALEMOLOKOV/13.2_K8S_Aleksandr_Molokov/assets/109212419/6708528a-84a0-4665-8f94-c65fcca442af)
+
+#### Созданный файл Hello.txt сохранися на ноде в папке, указанной в конфиг файле PV. После удаления PV файл так и остался в папке т.к. это локальные хранилище.
+
+### ------
 
 ### Задание 2
 
