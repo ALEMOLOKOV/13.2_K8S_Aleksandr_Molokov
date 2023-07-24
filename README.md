@@ -15,11 +15,11 @@
 
 ### Ответ
 
-#### ![Deployment]()
+#### ![Deployment](https://github.com/ALEMOLOKOV/13.2_K8S_Aleksandr_Molokov/blob/ce631bb93492079031b043678b4eada100d4bfee/deployment_pv.yaml)
 
-#### ![PV]()
+#### ![PV](https://github.com/ALEMOLOKOV/13.2_K8S_Aleksandr_Molokov/blob/ce631bb93492079031b043678b4eada100d4bfee/pv.yaml)
 
-#### ![PVC]()
+#### ![PVC](https://github.com/ALEMOLOKOV/13.2_K8S_Aleksandr_Molokov/blob/ce631bb93492079031b043678b4eada100d4bfee/pvc.yaml)
 
 #### Multitool может видеть и читать файлы, которые пишет Busybox
 
