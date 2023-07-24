@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-12.7
+  labels:
+    app: deployment-12.7
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deployment-12.7
+  template:
+    metadata:
+      labels:
+        app: deployment-12.7
+    spec:
+      containers:
+      - image: wbitt/network-multitool
+        name: multitool
+        volumeMounts:
+          - mountPath: /moltitool
+            name: volume-nfs
+        imagePullPolicy: IfNotPresent
+      volumes:
+        - name: volume-nfs
+          persistentVolumeClaim:
+            claimName: pvc-nfs
