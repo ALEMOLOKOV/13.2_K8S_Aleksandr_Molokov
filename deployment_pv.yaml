@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-12.7
+  labels:
+    app: deployment-12.7
+  namespace: my-ns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deployment-12.7
+  template:
+    metadata:
+      labels:
+        app: deployment-12.7
+    spec:
+      containers:
+      - image: busybox
+        name: busybox
+        command: ['sh', '-c', 'while true; do echo Hello user! >> /busybox/Hello.txt; sleep 5; done']
+        volumeMounts:
+          - mountPath: /busybox
+            name: volume-pv-pvc
+        imagePullPolicy: IfNotPresent
+      - image: wbitt/network-multitool
+        name: multitool
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+          - mountPath: /moltitool
+            name: volume-pv-pvc
+        imagePullPolicy: IfNotPresent
+      volumes:
+        - name: volume-pv-pvc
+          persistentVolumeClaim:
+            claimName: first-pvc

@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: first-pv
+  namespace: my-ns
+spec:
+  storageClassName: ""
+  capacity:
+    storage: 1Gi
+ accessModes:
+   - ReadWriteMany
+ hostPath:
+   path: /k8s_base/12.7/12.7.1
+ persistentVolumeReclaimPolicy: Retain
