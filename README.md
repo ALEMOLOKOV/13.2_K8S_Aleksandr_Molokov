@@ -60,8 +60,9 @@
 
 ![install nfs-common](https://github.com/ALEMOLOKOV/13.2_K8S_Aleksandr_Molokov/assets/109212419/f3487947-97a3-4cd2-a7f4-b95c5aed3ae7)
 
-#### ![Deployment]()
+#### ![Deployment](https://github.com/ALEMOLOKOV/13.2_K8S_Aleksandr_Molokov/blob/fce103771926eb45abe37534f4c16986c6762d03/deployment.yaml)
 
+#### ![PVC-NFS]()
 #### Статусы Deployment/sc/pv/pvc/Pods
 
 ![deploy-pvc-pv-sc](https://github.com/ALEMOLOKOV/13.2_K8S_Aleksandr_Molokov/assets/109212419/61756228-6d47-498d-86ce-e4569b84e7b4)
